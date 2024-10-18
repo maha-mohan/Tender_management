@@ -60,6 +60,10 @@ export default defineConfig(({ mode }) => {
       }
     },
     base: API_URL,
-    plugins: [react(), jsconfigPaths()]
+    plugins: [react(), jsconfigPaths()] ,
+    build: {
+      outDir: 'build', // Change the output directory to "build"
+    }
+
   };
 });
